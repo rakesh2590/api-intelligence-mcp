@@ -7,7 +7,7 @@ from api_intelligence_mcp.services.provider_service import (
 
 def main():
 
-    # Get all registered providers
+    # Get all the registered providers
     providers = get_all_providers()
 
     print("\n========== SUPPORTED API PROVIDERS ==========\n")
@@ -22,7 +22,7 @@ def main():
 
         print("---------------------------------------------")
 
-    # Search for a specific provider
+    # Search for the specific provider
     print("\n========== SEARCH PROVIDER ==========\n")
 
     provider = get_provider("gemini")

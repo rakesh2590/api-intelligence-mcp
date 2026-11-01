@@ -1,0 +1,20 @@
+[project]
+name = "api-intelligence-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "rakesh", email = "rakesh.kvr3@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=2.3.0",
+    "pydantic>=2.14.2",
+]
+
+[project.scripts]
+api-intelligence-mcp = "api_intelligence_mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.9.28,<0.10.0"]
+build-backend = "uv_build"

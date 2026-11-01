@@ -1,0 +1,63 @@
+{
+  "openai": {
+    "name": "OpenAI",
+    "provider_type": "LLM",
+    "base_url": "https://api.openai.com/v1",
+    "authentication": {
+      "type": "bearer_token",
+      "header": "Authorization",
+      "format": "Bearer <API_KEY>"
+    },
+    "documentation_url": "https://platform.openai.com/docs",
+    "capabilities": [
+      "text_generation",
+      "streaming",
+      "tool_calling",
+      "structured_outputs",
+      "embeddings",
+      "vision"
+    ],
+    "notes": "Capability availability depends on the selected model and endpoint."
+  },
+
+  "gemini": {
+    "name": "Google Gemini",
+    "provider_type": "LLM",
+    "base_url": "https://generativelanguage.googleapis.com/v1beta",
+    "authentication": {
+      "type": "api_key",
+      "header": "x-goog-api-key",
+      "format": "<API_KEY>"
+    },
+    "documentation_url": "https://ai.google.dev/api",
+    "capabilities": [
+      "text_generation",
+      "streaming",
+      "function_calling",
+      "structured_outputs",
+      "embeddings",
+      "multimodal"
+    ],
+    "notes": "Capability availability depends on the selected model and endpoint."
+  },
+
+  "claude": {
+    "name": "Anthropic Claude",
+    "provider_type": "LLM",
+    "base_url": "https://api.anthropic.com/v1",
+    "authentication": {
+      "type": "api_key",
+      "header": "x-api-key",
+      "format": "<API_KEY>"
+    },
+    "documentation_url": "https://docs.anthropic.com/",
+    "capabilities": [
+      "text_generation",
+      "streaming",
+      "tool_use",
+      "structured_outputs",
+      "vision"
+    ],
+    "notes": "Direct API requests also require the appropriate anthropic-version header. Capability availability depends on the selected model and endpoint."
+  }
+}
